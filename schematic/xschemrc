@@ -1,0 +1,3 @@
+source /usr/local/share/pdk/sky130A/libs.tech/xschem/xschemrc
+
+set local_netlist_dir 1
