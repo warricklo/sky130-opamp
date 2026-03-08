@@ -1,0 +1,13 @@
+.CONTROL
+
+FOREACH param id gm vth vds
+	FOREACH pfet 1 2 3 8 9 10 11 12
+		SAVE @m.x1.xm{$pfet}.msky130_fd_pr__pfet_01v8_lvt[{$param}]
+	END
+
+	FOREACH nfet 4 5 6 7 13 14
+		SAVE @m.x1.xm{$nfet}.msky130_fd_pr__nfet_01v8_lvt[{$param}]
+	END
+END
+
+.ENDC
